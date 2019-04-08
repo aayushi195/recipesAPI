@@ -37,7 +37,7 @@ class recipe_detail(APIView):
         serializer = RecipeSerializer(recipe)
         return Response(serializer.data)
 
-    def put(self, request, pk, format=None):
+    def put(self, request, pk):
         recipe = self.get_object(pk)
         serializer = RecipeSerializer(recipe, data=request.data)
         if serializer.is_valid():
