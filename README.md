@@ -14,8 +14,9 @@ Recipe
 relationship), One to Many relationship with Step and Ingredient Model 
 
 API: 
-You need to create API’s to create a new recipe, 
-                            get recipes by particular user, 
-                            get all the recipes , 
-                            update a recipe, 
-                            delete a particular recipe 
+You need to create API’s to (POST) create a new recipe - http://127.0.0.1:8000/recipes/, 
+                            (GET) get recipes by particular user - http://127.0.0.1:8000/recipes/users/2/, 
+                            (GET) get all the recipes http://127.0.0.1:8000/recipes/, 
+                            (PUT) update a recipe - http://127.0.0.1:8000/recipes/2/, 
+                            (DELETE) delete a particular recipe - http://127.0.0.1:8000/recipes/2/ 
+                            
